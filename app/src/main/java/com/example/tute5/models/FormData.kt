@@ -36,7 +36,7 @@ class FormData (private var studentId:String,
 
 
 
-    fun ValidateSemester():ValidationResult{
+    fun validateSemester():ValidationResult{
         return if(semester.isEmpty()){
             ValidationResult.Empty("Semester is empty")
         } else{
@@ -49,7 +49,7 @@ class FormData (private var studentId:String,
 
 
 
-    fun ValidateAgreement(): ValidationResult{
+    fun validateAgreement(): ValidationResult{
         return if (!agree){
             ValidationResult.Invalid("You must agree for the terms and conditions")
         } else{
